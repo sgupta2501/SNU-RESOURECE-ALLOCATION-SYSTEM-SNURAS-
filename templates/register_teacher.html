@@ -1,0 +1,68 @@
+{% extends 'common.html' %}
+
+{% block body%}
+<div class="register_teacher">
+				<div class="container height">
+				  <div class="row">
+				    <div class="col-sm-6 offset-md-3">
+
+                        <h2 class="Login">Sign Up for Staff Account</h2><br>
+
+				        <form action="/register_teacher/" method="post">
+				            {% csrf_token %}
+
+				    		<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text" id="basic-addon1"><i class="far fa-user"></i></span>
+							  </div>
+							  <input type="text" class="form-control" placeholder="Username" aria-label="Username" name="username" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
+							  </div>
+							  <input type="text" class="form-control" placeholder="First Name" aria-label="FirstName" name= "fname" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
+							  </div>
+							  <input type="text" class="form-control" placeholder="Last Name" aria-label="LastName" name= "lname" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
+							  </div>
+							  <input type="email" class="form-control" placeholder="Email" aria-label="Email" name= "email" aria-describedby="basic-addon1">
+							</div>
+
+
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text" id="basic-addon1"><i class="fas fa-hotel"></i></span>
+							  </div>
+							  <input type="text" class="form-control" placeholder="Room Number" aria-label="Room" name= "room" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text" id="basic-addon1">*</span>
+							  </div>
+							  <input type="password" class="form-control" placeholder="Password" aria-label="pass" name= "pass1" aria-describedby="basic-addon1">
+							  <input type="password" class="form-control" placeholder="Repeat Password" aria-label="repeat_pass" name= "pass2" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+								  <input type="submit" class="form-control submit" placeholder="submit" aria-label="submit" aria-describedby="basic-addon1">
+							</div>
+
+				        </form>        
+
+							<a class="regi" href="http://127.0.0.1:8000">Back To Login</a>	      
+				    </div>
+				  </div>
+				</div>
+</div>			
+{%endblock%}
